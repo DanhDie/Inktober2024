@@ -9,6 +9,7 @@ body {
     rgb(0, 0, 0) 100%
   );
   color: aliceblue;
+  transition: all 1s ease-in-out;
 }
 header {
   background: rgb(11, 1, 17);
@@ -35,6 +36,7 @@ main {
   align-items: center;
   row-gap: 1em;
   margin-top: 6em;
+  z-index: 0;
 }
 .bloco {
   background-color: aqua;
@@ -58,4 +60,8 @@ h2 {
 }
 .bloco img {
   width: 300px;
+}
+.bloco:hover {
+  background-color: rgba(63, 41, 78, 0.411);
+  transition: all 0.5s ease-out;
 }
